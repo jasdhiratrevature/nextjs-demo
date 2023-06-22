@@ -61,3 +61,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. In the root of the project create a directory comps and place Navbar and Footer component in them.
 4. Once the components are created place them in the index.js page
 ---
+### 04-Linking_Pages
+
+1. Now let us hook up all the components we have created, so if we click on one of them it directs us to the correct page component.
+2. The way we do this in next application is by a special component called the Link component 
+3. The link component adds the ability to do client side navigation in the browser meaning that different pages are loaded in via javascript and not new html page requests to the server, so it results in a much quicker website experience when  going between pages.
+4. Update the Navbar.js and use the Link Tag/Component, do the same for index.js
+---
