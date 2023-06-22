@@ -80,3 +80,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 8. the children property is basically any thing nested inside the Layout component 
 9. From the index.js delete the Navbar and Footer component
 ---
+### 06-Adding_Styles
+
+1. Let us now add some styles/css to our application.
+2. There are different ways to add CSS to your next project.
+	- Global Style Sheets
+	- Style JSX
+	- CSS modules
+3. The global style sheet is available inside the styles folder - globals.css
+4. Remove the content of the global.css and define your css rules(Can copy from the repo)
+5. For Page specific styles we will be using CSS Modules, which allows us to write a style for each page component 
+6. In the styles folder we already have a Home.module.css which is imported in the Home component (index.js) 
+7. Update the index.js to use the styles from the Home.module.css
+---
