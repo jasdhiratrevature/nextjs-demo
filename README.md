@@ -53,3 +53,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 6. So let us create a folder "friends" inside the pages folder.
 7. Also create 2 components - index and test inside the "friends" Subfolder
 ---
+
+### 03-More_Components
+
+1. Just like in react, in nextjs also we can have dropping components that are not page components , so things like a navbar component or a contact us component which we can use in multiple different page components.
+2. We do not create those dropping component in the pages folder we can create them some where else.
+3. In the root of the project create a directory comps and place Navbar and Footer component in them.
+4. Once the components are created place them in the index.js page
+---
