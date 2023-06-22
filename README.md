@@ -93,3 +93,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 6. In the styles folder we already have a Home.module.css which is imported in the Home component (index.js) 
 7. Update the index.js to use the styles from the Home.module.css
 ---
+### 07-Custom_404_Page
+
+1. What if the user tries to go to a url that doesn't exist, you will get a built in 404 page
+2. You can create your own 404 page and customize the content on that page
+3. In the pages folder create a new file 404.js . If the user trys to access a url that does not exist this page would be rendered
+4. Update the globals css as well
+---
