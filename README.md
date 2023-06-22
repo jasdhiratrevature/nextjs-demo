@@ -68,3 +68,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. The link component adds the ability to do client side navigation in the browser meaning that different pages are loaded in via javascript and not new html page requests to the server, so it results in a much quicker website experience when  going between pages.
 4. Update the Navbar.js and use the Link Tag/Component, do the same for index.js
 ---
+### 05-Creating_Layout_Component
+
+1. We would like the Navbar and Footer component to be available on all page, so the bad solution for this would be copy and paste those components to every page component. and if either the Navbar or the Footer changes, we have to change it in every page where we have used them.
+2. Ideally we would create a Layout component instead and that Layout component will contain the Navbar and Footer and other reusable component like that.
+3. Then that Layout component would wrap all of our different pages.
+4. In essence what we need to do is create that Layout and wrap the `<Component>` inside the _app.js file.
+5. Let out create a Layout component inside the comps folder.
+6. Now open the _app.js and import the Layout component and wrap the `<Component>` with the `<Layout>`
+7. Modify the Layout component, in the Layout component we can access the children as the props .
+8. the children property is basically any thing nested inside the Layout component 
+9. From the index.js delete the Navbar and Footer component
+---
