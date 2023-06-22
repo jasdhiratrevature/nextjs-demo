@@ -41,3 +41,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### 01-Intro_SetUp
 
 1. Make changes to index.js in the pages folder, remove the code inside the return of the Home() and replace it by an h2 tah inside a div tag.
+---
+
+### 02-Pages_Routes
+
+1. Inside the pages folder we create all of our page components, each page in nextjs is driven by a react component.So for an about page we will have an about component etc and etc.
+2. Each page component has its own file inside the pages folder, so the file name and location of each page component is tied to the route for that particular page. For Eg: If we create a new file inside this called about.js, then next will create a route for us which would be /about which is the name of the file to serve up this component, so we create a react component for this page inside this file, so the route name is tied  to the file name
+3. The only exception to this is index.js, which is called using only the /
+4. So Let us create an about(about.js) component inside the pages directory.
+5. Inside the pages folder we can create subfolders and create out components in the subfolder 
+6. So let us create a folder "friends" inside the pages folder.
+7. Also create 2 components - index and test inside the "friends" Subfolder
+---
