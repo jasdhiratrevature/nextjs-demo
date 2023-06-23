@@ -133,4 +133,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 8. getStaticProps() return an object with the props property 
 9. All add some style for the page (using Friends.module.css)
 ---
+### 11-Dynamic_Routes 
+
+1. So we have listed all the friends on the page, it would be nice if we can click on any one of the friend and that would open up the friend details page and see some information about them.
+2. For this we need to create a page for each of our friends and a route for each one of those and to do that we need to discuss about route parameters.
+3. Depending upon the number of friends we are listing we need to have a route generated for each one of those, to understand this better. we will discuss in terms of Static Site Generation (SSG)
+4. Once we have completed developing our application next is going to generate a static site for us based on all of our page components and its at this point that nextjs renders all of our page components into html files and JS bundles that goes with them for any interactivity on those pages so now we have a load of pages which are ready to deploy to the web a static site containing just these html pages and JS , so it is going to generate in our case at the minute an index,about and friends page.
+5. So when it comes to building our friendDetails pages, nextjs is going to need to generate an html file for eash friend listed.
+6. The template and the component will be same for each one of these pages, so we don't need to make multiple components for them, but nextjs still needs to pre render a seperate html page for every single friend and assign each one its own route.
+7. Let us create a friendDetails component that these pages are going to be based on, we will create that compont inside the friends folder
+8. Lets name the component as id, but this will be a literal , not changable, but in the present scenerio that id is changeable as per the friend id, and the way we do that is by putting square brackets around the file name, which in our case is "id". It can be named any thing, but must be inside the [] brackets.
+9.Create the Details component [id].js 
+10. Next update the friends listing page and add a Link for each friend in the list.(friends-->index.js)
+---
+
 
