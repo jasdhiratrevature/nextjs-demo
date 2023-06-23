@@ -107,3 +107,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. We will use the useEffect hook.
 4. Make changes in the 404.js page
 ---
+### 09-Images_Metadata
+
+1. Let us now replace the Logo Text with the logo image.
+2. The static assests are placed inside the public folder and any thing here is made accessible from the browser
+3. We will be using the image in the Navbar.js component.
+4. Open the Navbar.js and update it.
+5. We can use the html `<img>` Tag for this.
+6. NextJS uses the `<Image>` component and we can use this inplace of `<img>`
+7. Some of the benifits of using the Image component is size optimization, Faster page load etc.
+8. Sometimes we might want to add a custom title in the head for each page, and also we can add metadata.
+9. We can use the `<Head>` component which is built in NextJS.
+10. Let us open the index.js. The `<Head>` tag take the meta data nd insert it into the head of our documents.
+11. Similarly update the About component as well.
+---
+
