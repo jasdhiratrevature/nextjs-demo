@@ -100,3 +100,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. In the pages folder create a new file 404.js . If the user trys to access a url that does not exist this page would be rendered
 4. Update the globals css as well
 ---
+### 08-Redirecting_Users
+
+1. Some time we need to redirect a user to a different page without them clicking on any thing. For example a user submits a form, we might want them to redirect back to the home page. 
+2. We in our case we want an automatic redirect from the 404 page to the home page.
+3. We will use the useEffect hook.
+4. Make changes in the 404.js page
+---
