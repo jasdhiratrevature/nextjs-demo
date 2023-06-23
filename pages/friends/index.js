@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 }
 
 const Friends = ({ friends }) => {
-  console.log(friends)
+  //console.log(friends)
 
   return (
     <div>

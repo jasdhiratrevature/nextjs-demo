@@ -146,5 +146,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 9.Create the Details component [id].js 
 10. Next update the friends listing page and add a Link for each friend in the list.(friends-->index.js)
 ---
+### 12-Dynamic_Routes-2 
+
+1. Now we have the friendDetails page set up , the [] indicates that this route path is changeable, its a route parameter  and that means that there will be a friend Details page for each different friend id that we have so ultimately when we build our app for production next needs to be able to generate a route and an html page for each friend.
+2. But next doesn't automatically know what routes and html pages to generate because that depends on external data.
+3. So we need a way to explicitly tell next what friend details route and pages we need to create at build time based on our data and to do this we use a function getStaticPaths() 
+4. getStaticPaths() function runs at build time and inside it we return all the possible values for our route parameter the id paramater for this component and nextjs will know to generate a route and html page for each of those ids.
+5. So Let us create this function getStaticPaths()  at the top of `[id].js` page and we need to export this function
+6. At the end of this function we want to return an object and inside that we want a paths property.
+7. That paths property needs to be an array  of objects where each object represents a route if you  like and in each of those objects we need to specify any route parameters in our case the id.
+8. the second return value is the fallback which is for fallback pages. we will set it to false so that if the user tries to visit a route with an id that doesn't exist it will show the 404 page.
+9. So when we build are app nextjs will build a page and a route for each one using the parameter we specified, the id in our case
+---
+
 
 
