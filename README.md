@@ -158,6 +158,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 8. the second return value is the fallback which is for fallback pages. we will set it to false so that if the user tries to visit a route with an id that doesn't exist it will show the 404 page.
 9. So when we build are app nextjs will build a page and a route for each one using the parameter we specified, the id in our case
 ---
+### 13-Fetching_Single_Item
 
-
-
+1. No we need a way for each of those pages to show the data that we need for it and to do that we need to fetch each individual friend or user separately and pass that into the component as a prop.
+2. We have already seen this how to do that i.e. using getStaticProps().
+3. So let us do that in our `[id].js` file
+4. We can actully see the pages being build.
+5. Use the following command to build the app `npm run build`
+---
