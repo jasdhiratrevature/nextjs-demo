@@ -121,4 +121,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 10. Let us open the index.js. The `<Head>` tag take the meta data nd insert it into the head of our documents.
 11. Similarly update the About component as well.
 ---
+### 10-Fetching_Data_getStaticProps
+
+1. Time to fetch some data from the API
+2. In a React app, we would fetch this data from a hook like useEffect hook that would make a request in the browser. 
+3. In nextjs we don't do that because remember the component are all pre rendered by the time they reach browser  so ideally we want to fetch the data before thry're rendered so the rendered component have data in the template and to do this we can use a special function provided by nextjs.
+4. We are going to fetch our data inside the index.js inside of the friends folder.
+5. so the special function is used in the index.js inside of friends folder and the function is called getStaticProps() and we need to export this
+6. The function getStaticProps() runs at build time, as our app is built and our components rendered, at this point we can add a fetch call to the API to get any data we need for our component .  
+7. The function getStaticProps() never runs in the browser only at build time, so do not write any code here you expect to run in the browser.
+8. getStaticProps() return an object with the props property 
+9. All add some style for the page (using Friends.module.css)
+---
 
